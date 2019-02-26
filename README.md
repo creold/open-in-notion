@@ -9,23 +9,28 @@ Open in Notion - Chrome Extension
 
 ![](img/preview.gif)   
 
+### How to Manually Install
+1. Launch Chrome
+2. Go to Extensions (`chrome://extensions/`)
+3. Toggle `Developer mode`
+4. Click `Load unpacked extension`
+5. Select `src` folder from this repository
+
+###Or
+1. Launch Chrome
+2. Go to Extensions (`chrome://extensions/`)
+3. Drag and drop a .crx file onto the extensions page in Chrome. You will be asked to review the permissions and add the extension.
+
 ### Usage
 1. Download and install [Notion desktop app](https://www.notion.so/desktop).
-2. Install extension.
+2. Paste a Notion link into a Chrome address bar.
+3. Press `Enter`.
 3. If you see a confirmation dialog in Chrome, select "Always open these links associated with this app" option and then click "Open Notion" button.
 4. If you need to open a pages link in Chrome tab instead of Notion desktop app, you can switch the extension off by clicking on the extension icon.
 
 ### Custom option
 Right-clicking on the extension icon shows you preferences popup.   
 ![options](img/options.png)
-
-### To install it manually:
-
-1. Launch Chrome
-2. Go to Extensions (`chrome://extensions/`)
-3. Toggle `Developer mode`
-4. Click `Load unpacked extension`
-5. Select `src` folder from this repository
 
 ### Donate (optional)
 If you find this extension helpful, consider shouting me coffee ☕️ via [PayPal] or [Yandex Money] 🙂  
