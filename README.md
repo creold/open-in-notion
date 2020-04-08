@@ -20,11 +20,6 @@ Open in Notion - Chrome Extension
 4. Click `Load unpacked extension`
 5. Select `src` folder from this repository
 
-### Or
-1. Launch Chrome
-2. Go to Extensions (`chrome://extensions/`)
-3. Drag and drop a .crx file onto the extensions page in Chrome. You will be asked to review the permissions and add the extension.
-
 ### Usage
 1. Paste a Notion link into a Chrome address bar.
 2. Press `Enter`.
