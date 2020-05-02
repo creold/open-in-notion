@@ -1,0 +1,75 @@
+.toggle {
+  padding-bottom: 6px;
+}
+
+.toggle span {
+  padding-left: 12px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.onoffswitch {
+  position: relative; 
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block; 
+  overflow: hidden; 
+  cursor: pointer;
+  height: 20px; 
+  padding: 0; 
+  line-height: 20px;
+  border: none; 
+  border-radius: 20px;
+  background-color: #DCDEE0;
+  transition: background-color 0.2s ease-in;
+}
+
+.onoffswitch-label:before {
+  content: "";
+  display: block; 
+  width: 16px; 
+  margin: 2px;
+  background: #FFFFFF;
+  position: absolute; 
+  top: 0; 
+  bottom: 0;
+  right: 20px;
+  border: none; 
+  border-radius: 20px;
+  transition: all 0.2s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #2DC76D;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+ border-color: #2DC76D;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px; 
+}
+
+footer {
+  font-size: 10px;
+}
+
+.donate {
+  color: #4971D0 !important;
+}
+
+.donate:hover {
+  color: #6B91EB !important;
+}

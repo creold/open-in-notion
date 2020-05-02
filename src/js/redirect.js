@@ -19,29 +19,29 @@
 */
 
 var storage = chrome.storage.local;
-var notionAppURI = "notion://";
+var appURI = "notion://native/";
 var loc = document.location;
 var tabUrl = loc.href;
-var proto = "";
 
 // Get extension options
 storage.get(["OINStatus", "OINCloseTab"], function (data) {
-  var statusExt = data.OINStatus;
-  var linkTab = data.OINCloseTab;
+  let statusExt = data.OINStatus;
+  let linkTab = data.OINCloseTab;
 
-  var expression = "(https:\/\/www\.notion\.so\/).+";
+  let expression = "(https:\/\/www\.notion\.so\/).+";
   
   var notionRegex = new RegExp(expression);
-  var match = notionRegex.exec(tabUrl);
+  let match = notionRegex.exec(tabUrl);
 
   // Get extension status
     if (statusExt || statusExt == undefined) {
       if (match != null) {
-        loc.replace(tabUrl.replace(match[1], notionAppURI));
+        chrome.runtime.sendMessage({action: "OIN Redirect"});
+        loc.replace(tabUrl.replace(match[1], appURI));
         if (linkTab) {
           setTimeout(() => {
             closeTab();
-          }, 500);
+          }, 1000);
         }
       }
     }

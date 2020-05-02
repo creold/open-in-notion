@@ -3,24 +3,23 @@
 
 <head>
     <title>Open in Notion Options</title>
-    <style type="text/css">
-        label {
-            padding-right: 20px;
-        }
-        #status {
-            padding: 10px 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/options.css" rel="stylesheet">
 </head>
 
 <body>
-    <p>
-        <input type="checkbox" id="close">
-        Close the Chrome tab after opening Notion desktop app
-    </p>
-
-    <div id="status"></div>
-    <button id="save">Save</button>
+    <div class="toggle">
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="tabClose">
+            <label class="onoffswitch-label" for="tabClose"></label>
+        </div>
+        <span>Auto-close tab after opening Notion app</span>
+    </div>
+    
+    <footer>
+        <p><a class ='donate' href="https://www.paypal.me/osokin/3">Buy coffee</a> for the author via PayPal</p>
+    </footer>
 
     <script src="js/options.js"></script>
 </body>

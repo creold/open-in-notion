@@ -23,6 +23,33 @@ var action = chrome.browserAction;
 var tabs = chrome.tabs;
 var toggle = false;
 
+chrome.runtime.onInstalled.addListener(function() {
+  storage.set({
+    OINCloseTab: false
+  });
+});
+
+// Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-144468036-4"]);
+_gaq.push(["_trackPageview"]);
+
+(function() {
+  var ga = document.createElement("script");
+  ga.type = "text/javascript";
+  ga.async = true;
+  ga.src = "https://ssl.google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+// Receive the message from the content script
+chrome.runtime.onMessage.addListener(function( request, sender, sendResponse ) {
+    if(request.action == "OIN Redirect"){
+        _gaq.push(["_trackEvent", request.action, "initiated"]);
+    }
+});
+
 // Get extension status
 storage.get("OINStatus", function(data) {
   if (data.OINStatus || data.OINStatus == undefined) {
@@ -36,6 +63,7 @@ action.onClicked.addListener(function() {
   toggle = !toggle;
   setAppearance(toggle);
   storage.set({ OINStatus: toggle });
+  _gaq.push(["_trackEvent", "OIN Change Status", "clicked"]);
 });
 
 // Get response from content script

@@ -20,25 +20,46 @@
 
 var storage = chrome.storage.local;
 
-// Saves options to Chrome storage
-function saveOptions() {
-  var tab = document.getElementById("close").checked;
-  storage.set({ OINCloseTab: tab }, function () {
-    // Update status to let user know options were saved
-    var status = document.getElementById("status");
-    status.textContent = "Options saved.";
-    setTimeout(function () {
-      status.textContent = "";
-    }, 750);
-  });
+let toggle = document.querySelector('.toggle');
+let tabClose = document.querySelector('#tabClose');
+
+// Read settings
+storage.get(["OINCloseTab"], function(obj) {
+  tabClose.checked = obj.OINCloseTab;
+});
+
+// Inspect state
+function stateCheck(element) {
+  if (element.checked === true) return true;
+  return false;
 }
 
-// Restores radio state using the preferences
-function restoreOptions() {
-  storage.get({ OINCloseTab: false }, function (items) {
-    document.getElementById("close").checked = items.OINCloseTab;
-  });
+toggle.addEventListener("click", function(e) {
+  tabClose.checked = !tabClose.checked;
+  let settings = {
+    OINCloseTab: tabClose.checked ? true : false
+  };
+  storage.set(settings);
+});
+
+// Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-144468036-4"]);
+_gaq.push(["_trackPageview"]);
+
+(function() {
+  var ga = document.createElement("script");
+  ga.type = "text/javascript";
+  ga.async = true;
+  ga.src = "https://ssl.google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+function trackSettingsClick(e) {
+  _gaq.push(["_trackEvent", "OIN Change Settings", "clicked"]);
 }
 
-document.addEventListener("DOMContentLoaded", restoreOptions);
-document.getElementById("save").addEventListener("click", saveOptions);
+document.addEventListener("DOMContentLoaded", function () {
+  tabClose.addEventListener("click", trackSettingsClick);
+});
