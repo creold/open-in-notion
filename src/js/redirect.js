@@ -36,7 +36,6 @@ storage.get(["OINStatus", "OINCloseTab"], function (data) {
   // Get extension status
     if (statusExt || statusExt == undefined) {
       if (match != null) {
-        chrome.runtime.sendMessage({action: "OIN Redirect"});
         loc.replace(tabUrl.replace(match[1], appURI));
         if (linkTab) {
           setTimeout(() => {

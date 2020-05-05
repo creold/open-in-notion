@@ -49,7 +49,7 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] 
 | Version | Notes |
 | --- | --- |
 | v.0.1 | Initial version. |
-| v.0.1.3 | Fix issues. Update options page |
+| v.0.1.2 | Fix issues. Update options page |
 
 ### Contribute
 
