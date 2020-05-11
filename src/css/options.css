@@ -1,5 +1,5 @@
 .toggle {
-  padding-bottom: 6px;
+  padding-bottom: 14px;
 }
 
 .toggle span {
@@ -60,6 +60,12 @@
 
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
   right: 0px; 
+}
+
+.time input, label {
+  padding-right: 10px;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 footer {

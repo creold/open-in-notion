@@ -50,6 +50,7 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] 
 | --- | --- |
 | v.0.1 | Initial version. |
 | v.0.1.2 | Fix issues. Update options page |
+| v.0.1.3 | The code is adapted to the requirements of Google |
 
 ### Contribute
 
