@@ -1,5 +1,5 @@
-.toggle {
-  padding-bottom: 14px;
+.field {
+  margin-bottom: 24px;
 }
 
 .toggle span {
@@ -62,7 +62,8 @@
   right: 0px; 
 }
 
-.time input, label {
+.field input,
+label {
   padding-right: 10px;
   font-size: 14px;
   vertical-align: middle;

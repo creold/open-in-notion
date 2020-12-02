@@ -7,7 +7,8 @@ chrome.runtime.onInstalled.addListener(function() {
   storage.set({
     OINStatus: true,
     OINCloseTab: false,
-    OINCloseTime: 1
+    OINCloseTime: 1,
+    OINWorkspaces: ''
   });
 });
 

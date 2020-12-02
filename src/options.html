@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="toggle">
+    <div class="field toggle">
         <div class="onoffswitch">
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="tabClose">
             <label class="onoffswitch-label" for="tabClose"></label>
@@ -17,9 +17,15 @@
         <span>Close tab after opening Notion app</span>
     </div>
 
-    <div class="time">
+    <div class="field time">
         <label for="closeTime">Time to close (1-5 sec)</label>
         <input type="number" size="4" name="closeTime" min="1" max="5">
+    </div>
+    
+    <div class="field workspaces">
+        <label for="workspaces">Workspaces</label>
+        <input type="text" size="32" name="workspaces" />
+        <p>Comma-separated list of workspaces to open in the app.<br>Leave empty to apply on all workspaces.</p>
     </div>
     
     <footer>
