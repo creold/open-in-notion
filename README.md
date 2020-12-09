@@ -7,7 +7,7 @@ Open in Notion - Chrome Extension
 
 ## Preview
 
-![](img/preview.gif)   
+![](https://i.ibb.co/88V5pPJ/notion-preview.gif)   
 
 ### Install
 1. Download and install [Notion desktop app](https://www.notion.so/desktop).
@@ -29,7 +29,7 @@ Open in Notion - Chrome Extension
 
 ### Custom option
 Right-clicking on the extension icon shows you preferences popup.   
-![options](img/options.png)
+![options](https://i.ibb.co/0GCJBgH/notion-options.png)
 
 ### Donate (optional)
 If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] or [Yandex Money] 🙂  
@@ -37,11 +37,11 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] 
 [PayPal]: https://paypal.me/osokin/2usd
 [Yandex Money]: https://money.yandex.ru/to/410011149615582
 <a href="https://paypal.me/osokin/2usd">
-  <img width="160" height="49" src="img/paypal_badge.gif" >
+  <img width="160" height="49" src="https://i.ibb.co/LkgNvzG/paypal-badge.gif" >
 </a>  
 
 <a href="https://money.yandex.ru/to/410011149615582">
-  <img width="160" height="49" src="img/yandex_badge.gif" >
+  <img width="160" height="49" src="https://i.ibb.co/R906WmF/yandex-badge.gif" >
 </a>
 
 ### Release notes 
@@ -51,6 +51,7 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] 
 | v.0.1 | Initial version. |
 | v.0.1.2 | Fix issues. Update options page |
 | v.0.1.3 | The code is adapted to the requirements of Google |
+| v.0.1.4 | Added an option to open links from the specified workspaces in the app |
 
 ### Contribute
 

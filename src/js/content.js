@@ -9,10 +9,10 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], funct
   let time = data.OINCloseTime;
   let workspaces = data.OINWorkspaces;
   
-  let workspacesList = (workspaces || '').trim().split(/[ ,]+/)
+  let workspacesList = (workspaces || '').trim().split(/[ ,]+/);
   let workspacesRegex = "(" + workspacesList.join("|") + ")";
   
-  let expression = "((https:\/\/www\.notion\.so\/)(native\/)?"+workspacesRegex+").+";
+  let expression = "((https:\/\/www\.notion\.so\/)(native\/)?" + workspacesRegex + ").+";
   
   var notionRegex = new RegExp(expression);
   let match = notionRegex.exec(tabUrl);
