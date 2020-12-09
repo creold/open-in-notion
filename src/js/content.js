@@ -3,12 +3,16 @@ var loc = document.location;
 var tabUrl = loc.href;
 
 // Get extension options
-storage.get(["OINStatus", "OINCloseTab", "OINCloseTime"], function (data) {
+storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], function (data) {
   let statusExt = data.OINStatus;
   let linkTab = data.OINCloseTab;
   let time = data.OINCloseTime;
+  let workspaces = data.OINWorkspaces;
   
-  let expression = "(https:\/\/www\.notion\.so\/).+";
+  let workspacesList = (workspaces || '').trim().split(/[ ,]+/)
+  let workspacesRegex = "(" + workspacesList.join("|") + ")";
+  
+  let expression = "((https:\/\/www\.notion\.so\/)(native\/)?"+workspacesRegex+").+";
   
   var notionRegex = new RegExp(expression);
   let match = notionRegex.exec(tabUrl);
@@ -17,7 +21,7 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime"], function (data) {
     if (statusExt || statusExt == undefined) {
       if (match != null) {
         if (tabUrl.indexOf("/native/") == -1) {
-          loc.replace(tabUrl.replace(match[1], match[1] + "native/"));
+          loc.replace(tabUrl.replace(match[2], match[2] + "native/"));
         }
         if (linkTab) {
           setTimeout(() => {
