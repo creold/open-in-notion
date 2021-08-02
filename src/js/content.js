@@ -35,7 +35,7 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], funct
     if ((statusExt || statusExt == undefined) && reservedMatch != null) {
       if (match != null) {
         if (tabUrl.indexOf("/native/") == -1) {
-          loc.replace(tabUrl.replace(match[2], match[2] + "native/"));
+          loc.replace(tabUrl.replace(/^https?\:\/\//i, 'notion://'));
         }
         if (linkTab) {
           setTimeout(() => {
