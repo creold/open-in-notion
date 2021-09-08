@@ -32,16 +32,22 @@ Right-clicking on the extension icon shows you preferences popup.
 ![options](https://i.ibb.co/0GCJBgH/notion-options.png)
 
 ### Donate (optional)
-If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] or [Yandex Money] 🙂  
+If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal], [ЮMoney] or [Donatty] 🙂  
 
-[PayPal]: https://paypal.me/osokin/2usd
-[Yandex Money]: https://money.yandex.ru/to/410011149615582
-<a href="https://paypal.me/osokin/2usd">
-  <img width="160" height="49" src="https://i.ibb.co/LkgNvzG/paypal-badge.gif" >
-</a>  
+[PayPal]: https://paypal.me/osokin/3usd
+[ЮMoney]: https://yoomoney.ru/to/410011149615582
+[Donatty]: https://donatty.com/sergosokin
 
-<a href="https://money.yandex.ru/to/410011149615582">
-  <img width="160" height="49" src="https://i.ibb.co/R906WmF/yandex-badge.gif" >
+<a href="https://paypal.me/osokin/3usd">
+  <img width="147" height="40" src="https://i.ibb.co/Z8Wd8Sn/paypal-badge.png" >
+</a>
+
+<a href="https://yoomoney.ru/to/410011149615582">
+  <img width="147" height="40" src="https://i.ibb.co/448NHjM/yoomoney-badge.png" >
+</a>
+
+<a href="https://donatty.com/sergosokin">
+  <img width="147" height="40" src="https://i.ibb.co/p2Qj9Fr/donatty-badge.png" >
 </a>
 
 ### Release notes 
@@ -52,6 +58,8 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal] 
 | v.0.1.2 | Fix issues. Update options page |
 | v.0.1.3 | The code is adapted to the requirements of Google |
 | v.0.1.4 | Added an option to open links from the specified workspaces in the app |
+| v.0.1.4.1 | Excluded reserved web links. E.g.: notion.so/about|
+| v.0.1.5 | Replace /native redirect with support for new notion:// protocol|
 
 ### Contribute
 
