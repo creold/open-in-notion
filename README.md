@@ -60,6 +60,8 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal],
 | v.0.1.4 | Added an option to open links from the specified workspaces in the app |
 | v.0.1.4.1 | Excluded reserved web links. E.g.: notion.so/about|
 | v.0.1.5 | Replace /native redirect with support for new notion:// protocol|
+| v.0.1.5.1 | The list of reserved web links has been updated|
+| v.0.1.5.2 | The list of reserved web links has been updated|
 
 ### Contribute
 
