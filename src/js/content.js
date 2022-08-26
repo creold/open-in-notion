@@ -6,7 +6,7 @@ var reservedList = ["signup", "login", "careers", "pricing", "customers", "guide
                     "mobile", "desktop", "web-clipper", "product", "wikis", "projects", "notes",
                     "teams", "remote", "personal", "startups", "students", "educators", "evernote",
                     "confluence", "api-beta", "about", "tools-and-craft", "unsubscribe", "help",
-                    "templates"];
+                    "templates", "blog"];
 
 // Get extension options
 storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], function (data) {
