@@ -1,7 +1,7 @@
 {
    "manifest_version": 2,
    "name": "Open in Notion",
-   "version": "0.1.5.2",
+   "version": "0.1.5.4",
    "description": "Open share links in the your desktop app.",
    "icons": {
       "128": "icons/icon-ext-128.png",

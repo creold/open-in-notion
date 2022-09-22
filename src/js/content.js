@@ -1,12 +1,50 @@
 var storage = chrome.storage.local;
 var loc = document.location;
 var tabUrl = loc.href;
+
 // Reserved sections of the Notion website
-var reservedList = ["signup", "login", "careers", "pricing", "customers", "guides", "enterprise", 
-                    "mobile", "desktop", "web-clipper", "product", "wikis", "projects", "notes",
-                    "teams", "remote", "personal", "startups", "students", "educators", "evernote",
-                    "confluence", "api-beta", "about", "tools-and-craft", "unsubscribe", "help",
-                    "templates", "blog"];
+// Last update September 20, 2022
+var reservedList = [
+  "about",
+  "affiliates",
+  "api-beta",
+  "blog",
+  "careers",
+  "confluence",
+  "contact-sales",
+  "customers",
+  "desktop",
+  "educators",
+  "enterprise",
+  "events",
+  "evernote",
+  "guides",
+  "help",
+  "integrations",
+  "login",
+  "mobile",
+  "nonprofits",
+  "notes",
+  "pages",
+  "personal",
+  "pricing",
+  "product",
+  "projects",
+  "releases",
+  "remote",
+  "resources",
+  "security",
+  "signup",
+  "startups",
+  "students",
+  "teams",
+  "templates",
+  "tools-and-craft",
+  "unsubscribe",
+  "upgraded-account",
+  "web-clipper",
+  "wikis"
+];
 
 // Get extension options
 storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], function (data) {

@@ -1,7 +1,7 @@
 Open in Notion - Chrome Extension
 ======================
 
-[![Behance](https://img.shields.io/badge/Behance-%40creold-0055FF.svg)](https://behance.net/creold) [![Dribbble](https://img.shields.io/badge/Dribbble-%40creold-DF3A7A.svg)](https://dribbble.com/creold) [![Instagram](https://img.shields.io/badge/Instagram-%40serg_osokin-8034B2.svg)](https://www.instagram.com/serg_osokin/)
+![Users](https://img.shields.io/badge/Users-12k+-27CF7D.svg) ![Rating](https://img.shields.io/badge/Rating-4.5%20of%205-27CF7D.svg) ![Version](https://img.shields.io/badge/Version-0.1.5.4-34A9E1.svg)
 
 ### This Chrome extension intercepts Notion pages links and redirects them to the [Notion desktop app](https://www.notion.so/desktop).   
 
@@ -31,23 +31,38 @@ Open in Notion - Chrome Extension
 Right-clicking on the extension icon shows you preferences popup.   
 ![options](https://i.ibb.co/0GCJBgH/notion-options.png)
 
-### Donate (optional)
-If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal], [ЮMoney] or [Donatty] 🙂  
+### Testimonials
+* *I love the extension* - Asia Hoe
+* *Huge help* - Tal Binder
+* *Yes! Works perfect* - Tom Wood
+* *This extension is fire! I haven't found anything wrong with it yet* — Ryan Creel
+* *Works exactly as expected! Thank you* — Muhammad Usman
+* *Great extension, does the job perfectly. Thanks!* — Melvyn Hills
+* *Very helpful plugin for Chrome users* — Oleg Kostrikin
 
-[PayPal]: https://paypal.me/osokin/3usd
+### Donate (optional)
+If you find this extension helpful, you can buy me a coffee ☕️ via [Tinkoff], [ЮMoney], [Donatty], [DonatePay]. [PayPal] is temporarily unavailable.
+
+[Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405/
 [ЮMoney]: https://yoomoney.ru/to/410011149615582
 [Donatty]: https://donatty.com/sergosokin
+[DonatePay]: https://new.donatepay.ru/@osokin
+[PayPal]: https://paypal.me/osokin/5usd
 
-<a href="https://paypal.me/osokin/3usd">
-  <img width="147" height="40" src="https://i.ibb.co/Z8Wd8Sn/paypal-badge.png" >
+<a href="https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405/">
+  <img width="111" height="40" src="https://i.ibb.co/hRsbYnM/tinkoff-badge.png">
 </a>
 
 <a href="https://yoomoney.ru/to/410011149615582">
-  <img width="147" height="40" src="https://i.ibb.co/448NHjM/yoomoney-badge.png" >
+  <img width="111" height="40" src="https://i.ibb.co/wwrYWJ5/yoomoney-badge.png">
 </a>
 
 <a href="https://donatty.com/sergosokin">
-  <img width="147" height="40" src="https://i.ibb.co/p2Qj9Fr/donatty-badge.png" >
+  <img width="111" height="40" src="https://i.ibb.co/s61FGCn/donatty-badge.png">
+</a>
+
+<a href="https://new.donatepay.ru/@osokin">
+  <img width="111" height="40" src="https://i.ibb.co/0KJ94ND/donatepay-badge.png">
 </a>
 
 ### Release notes 
@@ -60,8 +75,10 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [PayPal],
 | v.0.1.4 | Added an option to open links from the specified workspaces in the app |
 | v.0.1.4.1 | Excluded reserved web links. E.g.: notion.so/about|
 | v.0.1.5 | Replace /native redirect with support for new notion:// protocol|
-| v.0.1.5.1 | The list of reserved web links has been updated|
-| v.0.1.5.2 | The list of reserved web links has been updated|
+| v.0.1.5.1 | Added "Help" to the list of reserved web links|
+| v.0.1.5.2 | Added "Templates" to the list of reserved web links|
+| v.0.1.5.3 | Added "Blog" to the list of reserved web links|
+| v.0.1.5.4 | The list of reserved web links is parsed from sitemap.xml|
 
 ### Contribute
 
