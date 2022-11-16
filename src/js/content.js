@@ -7,6 +7,7 @@ var tabUrl = loc.href;
 var reservedList = [
   "about",
   "affiliates",
+  "ai",
   "api-beta",
   "blog",
   "careers",
