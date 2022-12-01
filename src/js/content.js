@@ -3,7 +3,7 @@ var loc = document.location;
 var tabUrl = loc.href;
 
 // Reserved sections of the Notion website
-// Last update September 20, 2022
+// Last update December 01, 2022
 var reservedList = [
   "about",
   "affiliates",
@@ -15,6 +15,7 @@ var reservedList = [
   "contact-sales",
   "customers",
   "desktop",
+  "docs",
   "educators",
   "enterprise",
   "events",
@@ -36,6 +37,7 @@ var reservedList = [
   "resources",
   "security",
   "signup",
+  "sitemap",
   "startups",
   "students",
   "teams",
