@@ -1,3 +1,14 @@
+body {
+  color: rgb(51, 51, 51);
+  margin: 14px 17px;
+  font-family: system-ui, sans-serif;
+  font-size: 75%;
+}
+
+p {
+  line-height: 1.8em;
+}
+
 .field {
   margin-bottom: 24px;
 }
@@ -64,6 +75,7 @@
 
 .field input,
 label {
+  font-family: system-ui, sans-serif;
   padding-right: 10px;
   font-size: 14px;
   vertical-align: middle;

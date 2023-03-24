@@ -3,7 +3,7 @@ var loc = document.location;
 var tabUrl = loc.href;
 
 // Reserved sections of the Notion website
-// Last update December 01, 2022
+// Last update March 22, 2023
 var reservedList = [
   "about",
   "affiliates",
@@ -32,6 +32,7 @@ var reservedList = [
   "pricing",
   "product",
   "projects",
+  "pseudo",
   "releases",
   "remote",
   "resources",
@@ -45,8 +46,24 @@ var reservedList = [
   "tools-and-craft",
   "unsubscribe",
   "upgraded-account",
+  "use-case",
   "web-clipper",
-  "wikis"
+  "wikis",
+  "da-dk",
+  "de-de",
+  "en-us",
+  "es-es",
+  "es-la",
+  "fi-fi",
+  "fr-fr",
+  "ja-jp",
+  "ko-kr",
+  "login",
+  "nb-no",
+  "nl-nl",
+  "pt-br",
+  "zh-cn",
+  "zh-tw"
 ];
 
 // Get extension options

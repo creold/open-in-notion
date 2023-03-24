@@ -1,7 +1,7 @@
 Open in Notion - Chrome Extension
 ======================
 
-![Users](https://img.shields.io/badge/Users-12k+-27CF7D.svg) ![Rating](https://img.shields.io/badge/Rating-4.5%20of%205-27CF7D.svg) ![Version](https://img.shields.io/badge/Version-0.1.5.5-34A9E1.svg)
+![Users](https://img.shields.io/badge/Users-14k+-27CF7D.svg) ![Rating](https://img.shields.io/badge/Rating-4.5%20of%205-27CF7D.svg) ![Version](https://img.shields.io/badge/Version-0.1.5.6-34A9E1.svg)
 
 ### This Chrome extension intercepts Notion pages links and redirects them to the [Notion desktop app](https://www.notion.so/desktop).   
 
@@ -32,6 +32,7 @@ Right-clicking on the extension icon shows you preferences popup.
 ![options](https://i.ibb.co/0GCJBgH/notion-options.png)
 
 ### Testimonials
+* *I've been using your Open in Notion - Chrome Extension and I'm fascinated* - Victoria
 * *I love the extension* - Asia Hoe
 * *Huge help* - Tal Binder
 * *Yes! Works perfect* - Tom Wood
@@ -41,13 +42,18 @@ Right-clicking on the extension icon shows you preferences popup.
 * *Very helpful plugin for Chrome users* — Oleg Kostrikin
 
 ### Donate (optional)
-If you find this extension helpful, you can buy me a coffee ☕️ via [FanTalks], [Tinkoff], [ЮMoney], [Donatty], [DonatePay].
+If you find this extension helpful, you can buy me a coffee ☕️ via [Buymeacoffee], [FanTalks], [Tinkoff], [ЮMoney], [Donatty], [DonatePay].   
 
+[Buymeacoffee]: https://www.buymeacoffee.com/osokin
 [FanTalks]: https://fantalks.io/r/sergey
 [Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405/
 [ЮMoney]: https://yoomoney.ru/to/410011149615582
 [Donatty]: https://donatty.com/sergosokin
 [DonatePay]: https://new.donatepay.ru/@osokin
+
+<a href="https://www.buymeacoffee.com/osokin">
+  <img width="111" height="40" src="https://i.ibb.co/0ssTJQ1/bmc-badge.png">
+</a>
 
 <a href="https://fantalks.io/r/sergey">
   <img width="111" height="40" src="https://i.ibb.co/vcds3vF/fantalks-badge.png">
@@ -80,6 +86,7 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [FanTalks
 | v.0.1.5.3 | Added "Blog" to the list of reserved web links|
 | v.0.1.5.4 | The list of reserved web links is parsed from sitemap.xml|
 | v.0.1.5.5 | Added "Ai", "Docs" and "Sitemap" from sitemap.xml|
+| v.0.1.5.6 | Migrated to Manifest V3. Updated url's from sitemap.xml.|
 
 ### Contribute
 
