@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Open in Notion",
-  "version": "0.1.5.6",
+  "version": "0.1.6",
   "description": "Open share links in your desktop app.",
   "icons": {
     "128": "icons/icon-ext-128.png",
@@ -23,16 +23,14 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.notion.so/*"
+        "*://*.notion.so/*",
+        "*://*.notion.com/*"
       ],
       "js": [
         "js/content.js"
       ],
       "run_at": "document_end"
     }
-  ],
-  "host_permissions": [
-    "*://*.notion.so/*"
   ],
   "permissions": [
     "storage"

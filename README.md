@@ -1,7 +1,7 @@
 Open in Notion - Chrome Extension
 ======================
 
-![Users](https://img.shields.io/badge/Users-14k+-27CF7D.svg) ![Rating](https://img.shields.io/badge/Rating-4.5%20of%205-27CF7D.svg) ![Version](https://img.shields.io/badge/Version-0.1.5.6-34A9E1.svg)
+![Users](https://img.shields.io/badge/Users-12k+-27CF7D.svg) ![Rating](https://img.shields.io/badge/Rating-4.5%20of%205-27CF7D.svg) ![Version](https://img.shields.io/badge/Version-0.1.6-34A9E1.svg)
 
 ### This Chrome extension intercepts Notion pages links and redirects them to the [Notion desktop app](https://www.notion.so/desktop).   
 
@@ -10,7 +10,7 @@ Open in Notion - Chrome Extension
 ![](https://i.ibb.co/88V5pPJ/notion-preview.gif)   
 
 ### Install
-1. Download and install [Notion desktop app](https://www.notion.so/desktop).
+1. Download and install [Notion desktop app](https://www.notion.com/desktop).
 2. [Install extension](https://chrome.google.com/webstore/detail/open-in-notion/kjemindnkfgkkfdekkinfamjahhlemca) from Chrome Web Store.
 
 ### How to Manually Install
@@ -42,21 +42,25 @@ Right-clicking on the extension icon shows you preferences popup.
 * *Very helpful plugin for Chrome users* — Oleg Kostrikin
 
 ### Donate (optional)
-If you find this extension helpful, you can buy me a coffee ☕️ via [Buymeacoffee], [FanTalks], [Tinkoff], [ЮMoney], [Donatty], [DonatePay].   
+If you find this extension helpful, you can buy me a coffee ☕️ via [Buymeacoffee] `USD`, [CloudTips] `RUB`, [ЮMoney] `RUB`, [Tinkoff] `RUB`, [Donatty] `RUB`, [DonatePay] `RUB`. Thank you.
 
-[Buymeacoffee]: https://www.buymeacoffee.com/osokin
-[FanTalks]: https://fantalks.io/r/sergey
-[Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405/
+[Buymeacoffee]: https://www.buymeacoffee.com/aiscripts
 [ЮMoney]: https://yoomoney.ru/to/410011149615582
+[CloudTips]: https://pay.cloudtips.ru/p/b81d370e
+[Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405
 [Donatty]: https://donatty.com/sergosokin
 [DonatePay]: https://new.donatepay.ru/@osokin
 
-<a href="https://www.buymeacoffee.com/osokin">
+<a href="https://www.buymeacoffee.com/aiscripts">
   <img width="111" height="40" src="https://i.ibb.co/0ssTJQ1/bmc-badge.png">
 </a>
 
-<a href="https://fantalks.io/r/sergey">
-  <img width="111" height="40" src="https://i.ibb.co/vcds3vF/fantalks-badge.png">
+<a href="https://pay.cloudtips.ru/p/b81d370e">
+  <img width="111" height="40" src="https://i.ibb.co/qLznXkNG/cloudtips-badge.png">
+</a>
+
+<a href="https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405">
+  <img width="111" height="40" src="https://i.ibb.co/hRsbYnM/tinkoff-badge.png">
 </a>
 
 <a href="https://yoomoney.ru/to/410011149615582">
@@ -75,18 +79,20 @@ If you find this extension helpful, you can buy me a coffee ☕️ via [Buymeaco
 
 | Version | Notes |
 | --- | --- |
-| v.0.1 | Initial version. |
-| v.0.1.2 | Fix issues. Update options page |
-| v.0.1.3 | The code is adapted to the requirements of Google |
-| v.0.1.4 | Added an option to open links from the specified workspaces in the app |
-| v.0.1.4.1 | Excluded reserved web links. E.g.: notion.so/about|
-| v.0.1.5 | Replace /native redirect with support for new notion:// protocol|
-| v.0.1.5.1 | Added "Help" to the list of reserved web links|
-| v.0.1.5.2 | Added "Templates" to the list of reserved web links|
-| v.0.1.5.3 | Added "Blog" to the list of reserved web links|
-| v.0.1.5.4 | The list of reserved web links is parsed from sitemap.xml|
-| v.0.1.5.5 | Added "Ai", "Docs" and "Sitemap" from sitemap.xml|
+| v.0.1.6 | Added support for notion.com domain. Updated reserved url's. Minor improvements|
 | v.0.1.5.6 | Migrated to Manifest V3. Updated url's from sitemap.xml.|
+| v.0.1.5.5 | Added "Ai", "Docs" and "Sitemap" from sitemap.xml|
+| v.0.1.5.4 | The list of reserved web links is parsed from sitemap.xml|
+| v.0.1.5.3 | Added "Blog" to the list of reserved web links|
+| v.0.1.5.2 | Added "Templates" to the list of reserved web links|
+| v.0.1.5.1 | Added "Help" to the list of reserved web links|
+| v.0.1.5 | Replace /native redirect with support for new notion:// protocol|
+| v.0.1.4.1 | Excluded reserved web links. E.g.: notion.so/about|
+| v.0.1.4 | Added an option to open links from the specified workspaces in the app |
+| v.0.1.3 | The code is adapted to the requirements of Google |
+| v.0.1.2 | Fix issues. Update options page |
+| v.0.1 | Initial version. |
+
 
 ### Contribute
 

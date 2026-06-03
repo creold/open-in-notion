@@ -1,41 +1,51 @@
-var storage = chrome.storage.local;
-var action = chrome.action;
-var tabs = chrome.tabs;
-var toggle = false;
+// Shortcuts for Chrome APIs
+const storage = chrome.storage.local;
+const action = chrome.action;
+const tabs = chrome.tabs;
 
-chrome.runtime.onInstalled.addListener(function() {
+// Set default settings on extension installation
+chrome.runtime.onInstalled.addListener(() => {
   storage.set({
     OINStatus: true,
     OINCloseTab: false,
     OINCloseTime: 1,
     OINWorkspaces: ''
   });
+  
+  // Set initial appearance (ON by default)
+  setAppearance(true);
 });
 
-// Get extension status
-storage.get("OINStatus", function(data) {
-  if (data.OINStatus) {
-    toggle = true;
-  }
-  setAppearance(toggle);
+// Set appearance when the Service Worker starts up
+storage.get("OINStatus", (data) => {
+  const isEnabled = data.OINStatus !== false;
+  setAppearance(isEnabled);
 });
 
-// On/Off extension
-action.onClicked.addListener(function() {
-  toggle = !toggle;
-  setAppearance(toggle);
-  storage.set({ OINStatus: toggle });
+// Handle extension icon click (Toggle On/Off)
+action.onClicked.addListener(() => {
+  storage.get("OINStatus", (data) => {
+    // Fallback to true if undefined, then toggle the value
+    const currentStatus = data.OINStatus !== false;
+    const nextStatus = !currentStatus;
+
+    // Update storage and appearance reactively
+    storage.set({ OINStatus: nextStatus }, () => {
+      setAppearance(nextStatus);
+    });
+  });
 });
 
-// Get response from content script
-chrome.runtime.onMessage.addListener(function(request, sender) {
-  if (request === "closeTab") {
+// Listen for messages from content scripts
+chrome.runtime.onMessage.addListener((request, sender) => {
+  if (request === "closeTab" && sender.tab && sender.tab.id) {
     tabs.remove(sender.tab.id);
   }
 });
 
-function setAppearance(argument) {
-  if (argument) {
+// Update the extension icon and badge based on status
+function setAppearance(isEnabled) {
+  if (isEnabled) {
     action.setIcon({
       path: {
         "16": "/icons/icon-on-16.png",

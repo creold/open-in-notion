@@ -1,43 +1,38 @@
-var storage = chrome.storage.local;
+const storage = chrome.storage.local;
 
-let toggle = document.querySelector(".toggle");
-let time = document.querySelector('input[name="closeTime"]');
-let workspaces = document.querySelector('input[name="workspaces"]');
-let tabClose = document.querySelector("#tabClose");
+// DOM Elements
+const tabCloseCheckbox = document.querySelector("#tabClose");
+const closeTimeInput = document.querySelector('input[name="closeTime"]');
+const workspacesInput = document.querySelector('input[name="workspaces"]');
 
-// Read settings
-storage.get(["OINCloseTab", "OINCloseTime", "OINWorkspaces"], function(obj) {
-  tabClose.checked = obj.OINCloseTab;
-  time.value = obj.OINCloseTime;
-  workspaces.value = obj.OINWorkspaces || '';
+// Load saved settings and populate the UI
+storage.get(["OINCloseTab", "OINCloseTime", "OINWorkspaces"], (obj) => {
+  tabCloseCheckbox.checked = !!obj.OINCloseTab;
+  closeTimeInput.value = obj.OINCloseTime || 1;
+  workspacesInput.value = obj.OINWorkspaces || '';
 });
 
-// Inspect state
-function stateCheck(element) {
-  if (element.checked === true) return true;
-  return false;
-}
-
-toggle.addEventListener("click", function(e) {
-  tabClose.checked = !tabClose.checked;
-  let settings = {
-    OINCloseTab: tabClose.checked ? true : false
-  };
-  storage.set(settings);
+// Save checkbox state on change
+tabCloseCheckbox.addEventListener("change", () => {
+  storage.set({ OINCloseTab: tabCloseCheckbox.checked });
 });
 
-time.addEventListener("change", function(e) {
-  if (time.value > 5) time.value = 5;
-  if (time.value < 1) time.value = 1;
-  let settings = {
-    OINCloseTime: time.value
-  };
-  storage.set(settings);
+// Validate and save close time instantly on input
+closeTimeInput.addEventListener("input", () => {
+  let value = parseInt(closeTimeInput.value, 10);
+  
+  // Fallback if input is empty or NaN
+  if (isNaN(value)) value = 1; 
+  
+  // Enforce min/max constraints
+  if (value > 5) value = 5;
+  if (value < 1) value = 1;
+  
+  closeTimeInput.value = value;
+  storage.set({ OINCloseTime: value });
 });
 
-workspaces.addEventListener("change", function(e) {
-  let settings = {
-    OINWorkspaces: workspaces.value
-  };
-  storage.set(settings);
+// Save workspaces list on change (when focus is lost)
+workspacesInput.addEventListener("change", () => {
+  storage.set({ OINWorkspaces: workspacesInput.value });
 });
